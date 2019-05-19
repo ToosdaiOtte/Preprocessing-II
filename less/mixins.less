@@ -1,8 +1,18 @@
-// Mixins in here
-
-.button() {
-    box-sizing: border-box;
-    padding: 5%;
-    background: @button-bg;
-
+// Mixins 
+.layout(@justify) {
+    display: flex;
+    justify-content: @justify;
 }
+
+.button-layout(@color, @br) {
+    background-color: @color;
+    border-radius: @br;
+    
+}
+
+.mL(@direction) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+@mobile: ~"(max-width: 500px)";

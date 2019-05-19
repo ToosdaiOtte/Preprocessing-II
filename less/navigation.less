@@ -1,23 +1,41 @@
 // Navigation Styles here
 
 .navBar { 
-    display: flex;
-    justify-content: space-between;
+    .layout(space-between);
     border-bottom: 2px dashed @navigation-border;
     box-sizing: border-box;
     padding-bottom: 30px;
+    
+    @media @mobile {
+          .mL(column);
+          
+       }
 
    h1 {
         box-sizing: border-box;
         padding-top: 20px;
         padding-left: 20%;
+
+        @media @mobile {
+            text-align: center;
+            box-sizing: border-box;
+            padding-right: 25%;
+            
+        }
    }
 
    nav {
+       display: flex;
        box-sizing: border-box;
        padding-top: 35px;
        padding-right: 20%;
-      
+
+      @media @mobile {
+          .layout(space-between);
+          margin-left: 10%;
+          padding-top: 15px;
+          padding-right: 10%;
+      }
    } 
    
    a {
@@ -26,5 +44,9 @@
            text-decoration: none;
            box-sizing: border-box;
            padding-right: 30px;
+
+            @media @mobile {
+                
+            }          
        }
 }
