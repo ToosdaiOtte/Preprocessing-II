@@ -1,1 +1,17 @@
-// Mixins in here
+// Mixins 
+.layout(@justify) {
+    display: flex;
+    justify-content: @justify;
+}
+
+.button-layout(@color, @br) {
+    background-color: @color;
+    border-radius: @br;
+    
+}
+
+.mL(@direction) {
+    display: flex;
+    flex-direction: @direction;
+}
+
